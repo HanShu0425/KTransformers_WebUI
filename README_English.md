@@ -1,5 +1,5 @@
-##Low-cost 2*2080Ti deployment of full-blooded DeepSeek-R1 model
-###Technology Stack: KTransformers + DeepSeek (gguf version) + OpenWebUI version
+## Low-cost 2*2080Ti deployment of full-blooded DeepSeek-R1 model
+### Technology Stack: KTransformers + DeepSeek (gguf version) + OpenWebUI version
 Environment: 2*2080Ti
 
 After deploying KTransformers on the server and loading DeepSeek's parameter file, I found that the 2080 could not use KTransformers with the DeepSeek-R1 model.
@@ -8,13 +8,13 @@ I found that 2080 cannot use KTrans' Marlin operator.
 
 After deploying KTrans UI with Request Error problem, I chose to implement it with OpenWebUI.
 
-###Deploying KTransformer
+### Deploying KTransformer
 Installation Guide - Ktransformers
 
 Follow the official deployment Complete the Preparation, Installation and testing of Local Chat.
 
-###Download DeekSeek-R1 parameters
-####Note: When downloading DeepSeek-R1, you can't use the original .safetensors file, but the .gguf file they provide.
+### Download DeekSeek-R1 parameters
+#### Note: When downloading DeepSeek-R1, you can't use the original .safetensors file, but the .gguf file they provide.
 [huggingface.co](https://huggingface.co/unsloth/DeepSeek-R1-GGUF/tree/main/DeepSeek-R1-Q4_K_M)
 
 ## Deployment issues:

@@ -51,17 +51,17 @@ compilation terminated.
 
 尝试用gitee下载KTrans模块
 
-`git clone https://gitee.com/nemo1982/ktransformers.git  `
+`git clone https://gitee.com/your/path/ktransformers.git  `
 
 两个第三方软件也都更换成gitee的同源软件 in `ktransformers/.gitmodules`
 
 ```
 [submodule "third_party/llama.cpp"]
 	path = third_party/llama.cpp
-	url = https://gitee.com/fastdgiot/llama.cpp.git
+	url = https://your/path/llama.cpp.git
 [submodule "third_party/pybind11"]
 	path = third_party/pybind11
-	url = https://gitee.com/uniqueinfo_395910063/pybind11.git
+	url = https://your/path/pybind11.git
 ```
 
 ## 2. CUDA_LAUNCH_BLOCKING=1
@@ -119,8 +119,20 @@ open-webui serve
 ```
 
 [Open WebUI](http://ip:8080/) 
+[Open WebUI](http://ip:8080/) 
 
-需要配置编辑链接
+在`ktransformers/ktransformers/website/public/index.html`
+
+修改`<script src="./config_remote.js">` 成你自己的config文件
+
+```
+window.configWeb = {
+    apiUrl: '/v1',
+    port: 8080,
+  };
+```
+
+后只需要配置编辑链接
 
 URL： http://ip:10002/v1 密钥与ID随便设置即可！
 

@@ -63,7 +63,7 @@ Both third-party programs are also replaced with the same source from gitee in `
 
 ## 2. cuda_launch_blocking=1
 
-Do `Local_Chat normally
+Do `Local_Chat normally`
 
 ```
 python -m ktransformers.local_chat --model_path . /DeepSeek-R1 --gguf_path . /deepseek_ggufs
@@ -74,7 +74,7 @@ RuntimeError: CUDA error: invalid device function
 CUDA kernel errors may be reported asynchronously in other API calls, so the stack trace below may not be correct.
 For debugging purposes, consider passing CUDA_LAUNCH_BLOCKING=1
 Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
-``
+```
 
 #### Reason: Marlins algorithm has GPU requirements
 

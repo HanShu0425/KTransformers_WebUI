@@ -21,7 +21,7 @@ Follow the official deployment Complete the Preparation, Installation and testin
 
 ## 1. If using .git when downloading 
 
-``
+```
 git clone https://github.com/kvcache-ai/ktransformers.git
 
 cd ktransformers 
